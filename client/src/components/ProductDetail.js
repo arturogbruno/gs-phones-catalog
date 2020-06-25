@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import CircleLoader from "react-spinners/CircleLoader";
+import NotFound from "./NotFound";
 
 const ProductDetail = ({ match }) => {
     const id = +match.params.id;
@@ -39,7 +40,7 @@ const ProductDetail = ({ match }) => {
             </div>
         )
     } else {
-        return <h1>Not found!</h1>
+        return <NotFound />
     }
 }
 

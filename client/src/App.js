@@ -7,6 +7,7 @@ import Catalog from "./components/Catalog";
 import ProductDetail from "./components/ProductDetail";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import NotFound from "./components/NotFound";
 import "./App.css";
 
 function App() {
@@ -32,7 +33,8 @@ function App() {
             <Navbar category={category} />
             <Switch>
                 <Route exact path="/" render={() => <Catalog category={category} products={products} />} />
-                <Route exact path={`/${category}/:id`} component={ProductDetail} /> 
+                <Route exact path={`/${category}/:id`} component={ProductDetail} />
+                <Route component={NotFound} />
             </Switch>
             <Footer />
         </div>
