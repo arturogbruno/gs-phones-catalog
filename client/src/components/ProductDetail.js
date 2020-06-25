@@ -18,7 +18,7 @@ const ProductDetail = ({ match }) => {
         return (
             <div className="ProductDetail"> 
                 <h1>This is the product detail page</h1>
-                <Link to="/">🔙 Back</Link>
+                <Link to="/"><span role="img" aria-label="back link">⏪</span> Back</Link>
                 <img src={`../images/${imageFileName}`} alt={`${manufacturer} ${name}`} />
                 <h3>{manufacturer} {name}</h3>
                 <h3>{price} €</h3>

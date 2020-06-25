@@ -5,6 +5,8 @@ import { addProducts } from "./redux/actions";
 import PhonesServices from "./services/PhonesServices";
 import Catalog from "./components/Catalog";
 import ProductDetail from "./components/ProductDetail";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -27,10 +29,12 @@ function App() {
 
     return (
         <div className="App">
+            <Navbar category={category} />
             <Switch>
                 <Route exact path="/" render={() => <Catalog category={category} products={products} />} />
                 <Route exact path={`/${category}/:id`} component={ProductDetail} /> 
             </Switch>
+            <Footer />
         </div>
     )
 }
