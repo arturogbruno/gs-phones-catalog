@@ -1,13 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import CircleLoader from "react-spinners/CircleLoader";
 
 const ProductDetail = ({ match }) => {
     const id = +match.params.id;
     const products = useSelector(state => state.products);
     
     if(products.length === 0) {
-        return <h1>Loading...</h1>
+        return (
+            <CircleLoader 
+                color={"#00b091"}
+                size={50}
+            />
+        )
     }
     
     const selectedProduct = products.find(product => product.id === id);

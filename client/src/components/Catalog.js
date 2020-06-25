@@ -1,5 +1,6 @@
 import React from "react";
 import ProductOverview from "./ProductOverview";
+import CircleLoader from "react-spinners/CircleLoader";
 
 const Catalog = ({ category, products }) => {
     return (
@@ -12,7 +13,10 @@ const Catalog = ({ category, products }) => {
                     ))}
                 </>
             ) : (
-                <h1>Loading...</h1>
+                <CircleLoader 
+                    color={"#00b091"}
+                    size={50}
+                />
             )}
         </div>
     )
