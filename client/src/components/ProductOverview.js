@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./ProductOverview.scss";
 
 const ProductOverview = ({ category, product }) => {
     const { id, manufacturer, name, price, imageFileName } = product;

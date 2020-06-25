@@ -1,6 +1,7 @@
 import React from "react";
 import ProductOverview from "./ProductOverview";
 import CircleLoader from "react-spinners/CircleLoader";
+import "./Catalog.scss";
 
 const Catalog = ({ category, products }) => {
     return (

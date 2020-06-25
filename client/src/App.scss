@@ -1,0 +1,13 @@
+@import "./reset.css";
+
+.App {
+    background-color: #ffffff;
+    background-image: url("./background.svg");
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}

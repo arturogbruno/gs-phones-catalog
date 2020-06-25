@@ -8,7 +8,7 @@ import ProductDetail from "./components/ProductDetail";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import NotFound from "./components/NotFound";
-import "./App.css";
+import "./App.scss";
 
 function App() {
     const category = "phones";

@@ -1,10 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./Navbar.scss";
 
 const Navbar = ({ category }) => {
     return (
         <div className="Navbar">
-            <img src="https://images.ctfassets.net/5gv1edeicqfs/2VJg7fkuNaAUqUawUuckk4/66298626f95b05550594405b2e5d39b9/gs-logo-inv.png" alt="GS logo" />
-            <h3>{category.charAt(0).toUpperCase().concat(category.slice(1))} Catalog</h3>
+            <Link to="/">
+                <img className="logo" src="https://images.ctfassets.net/5gv1edeicqfs/48EM0LU3Z6gWkQCcCaeoq2/704ea273b5d50d09ff450a5ceaa74631/guidesmiths-logo.png" alt="GS logo" />
+                <h2>{category.charAt(0).toUpperCase().concat(category.slice(1))} Catalog</h2>
+            </Link>
         </div>
     )
 }

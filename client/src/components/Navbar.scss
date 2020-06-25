@@ -1,0 +1,26 @@
+.Navbar {
+    background-color: #fff;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+    
+    a {
+        color: #000;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .logo {
+        height: 3rem;
+        margin-right: 1rem;
+    }
+}
