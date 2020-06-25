@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addProducts } from "../redux/actions";
 import PhonesServices from "../services/PhonesServices";
+import ProductOverview from "./ProductOverview";
 
 const Catalog = ({ category }) => {
     const phonesServices = new PhonesServices();
@@ -21,10 +22,16 @@ const Catalog = ({ category }) => {
 
     return (
         <div className="Catalog">
-            <h1>{`This is the ${category} catalog`}</h1>
-            {products.map(product => (
-                <li key={product.id}>{product.manufacturer} {product.name}</li>
-            ))}
+            {products.length !== 0 ? (
+                <>
+                    <h1>{`This is the ${category} catalog`}</h1>
+                    {products.map(product => (
+                        <ProductOverview key={product.id} category={category} product={product} />
+                    ))}
+                </>
+            ) : (
+                <h1>Loading...</h1>
+            )}
         </div>
     )
 }
