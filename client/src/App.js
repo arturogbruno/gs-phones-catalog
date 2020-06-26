@@ -26,8 +26,6 @@ function App() {
         getProductsData();
     }, [])
 
-    console.log(products);
-
     return (
         <div className="App">
             <Navbar category={category} />
