@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing ProductOverview component should render ProductOverview component 1`] = `
+<div
+  className="ProductOverview"
+>
+  <Link
+    to="/phones/2"
+  >
+    <img
+      alt="Huawei Honor 10"
+      src="images/Honor_10.png"
+    />
+    <div
+      className="productMainInfo"
+    >
+      <div
+        className="makerModel"
+      >
+        <h2>
+          Huawei
+        </h2>
+        <h2>
+          Honor 10
+        </h2>
+      </div>
+      <h2
+        className="price"
+      >
+        399
+         €
+      </h2>
+    </div>
+  </Link>
+</div>
+`;

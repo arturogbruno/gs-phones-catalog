@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Catalog component should render Catalog component 1`] = `
+<div
+  className="Catalog"
+>
+  <header>
+    <h1>
+      Welcome to the smallest phones catalog
+    </h1>
+    <h3>
+      We have narrowed the search for you to make your choice easier!
+    </h3>
+  </header>
+  <ProductOverview
+    category="phones"
+    key="2"
+    product={
+      Object {
+        "color": "blue",
+        "description": "Great phone with an excellent interface. One of the best mid price range phones in the market.",
+        "id": 2,
+        "imageFileName": "Honor_10.png",
+        "manufacturer": "Huawei",
+        "name": "Honor 10",
+        "price": 399,
+        "processor": "Kirin 970",
+        "ram": 6,
+        "screen": "5,84 inch Full-HD",
+      }
+    }
+  />
+</div>
+`;

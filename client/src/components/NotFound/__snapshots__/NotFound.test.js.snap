@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing NotFound component should render NotFound component 1`] = `
+<div
+  className="NotFound"
+>
+  <img
+    alt="not found"
+    src="/images/notfound.png"
+  />
+  <h1>
+    Ups... we can't find the page you were looking for.
+  </h1>
+  <button>
+    <Link
+      to="/"
+    >
+      Take me back!
+    </Link>
+  </button>
+</div>
+`;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Navbar component should render Navbar component 1`] = `
+<div
+  className="Navbar"
+>
+  <Link
+    to="/"
+  >
+    <img
+      alt="GS logo"
+      className="logo"
+      src="https://images.ctfassets.net/5gv1edeicqfs/48EM0LU3Z6gWkQCcCaeoq2/704ea273b5d50d09ff450a5ceaa74631/guidesmiths-logo.png"
+    />
+    <h2>
+      Test
+       Catalog
+    </h2>
+  </Link>
+</div>
+`;
