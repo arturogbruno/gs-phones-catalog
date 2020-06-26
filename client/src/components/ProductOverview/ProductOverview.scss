@@ -1,10 +1,12 @@
+@import "../../styles/mixins.scss";
+
 .ProductOverview {
     width: 100%;
-    background: linear-gradient(90deg, rgba(255,255,255,1) 5%, rgba(255,255,255,0.5) 70%, rgba(255,255,255,0.5) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 15%, rgba(255,255,255,0.5) 70%, rgba(255,255,255,0.5) 100%);
     margin-bottom: 50px;
 
     a {
-        height: 150px;
+        height: 100px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -17,16 +19,17 @@
         }
 
         img {
-            height: 100%; 
+            height: 100%;
         }
 
         .productMainInfo {
-            // background-color: lightcoral;
-            width: 100%;
+            width: 60%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: 0 10%;
+            margin: 0;
+            padding-right: 10px;
+            font-size: 0.7em;
 
             .makerModel {
                 display: flex;
@@ -40,6 +43,16 @@
             .price {
                 font-style: italic;
             }
+
+            @include md {
+                font-size: 1em;
+                margin: 0 10%;
+                padding-right: 0;
+            }
+        }
+
+        @include md {
+            height: 150px;
         }
     }
 }
