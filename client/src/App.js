@@ -3,11 +3,11 @@ import { Switch, Route } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addProducts } from "./redux/actions";
 import PhonesServices from "./services/PhonesServices";
-import Catalog from "./components/Catalog";
-import ProductDetail from "./components/ProductDetail";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import NotFound from "./components/NotFound";
+import Catalog from "./components/Catalog/Catalog";
+import ProductDetail from "./components/ProductDetail/ProductDetail";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import NotFound from "./components/NotFound/NotFound";
 import "./App.scss";
 
 function App() {

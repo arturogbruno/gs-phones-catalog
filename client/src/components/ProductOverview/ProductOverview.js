@@ -9,9 +9,13 @@ const ProductOverview = ({ category, product }) => {
         <div className="ProductOverview">
             <Link to={`/${category}/${id}`}>
                 <img src={`images/${imageFileName}`} alt={`${manufacturer} ${name}`} />
-                <h3>{manufacturer}</h3>
-                <h3>{name}</h3>
-                <h3>{price} €</h3>
+                <div className="productMainInfo">
+                    <div className="makerModel">
+                        <h2>{manufacturer}</h2>
+                        <h2>{name}</h2>
+                    </div>
+                    <h2 className="price">{price} €</h2>
+                </div>
             </Link>
         </div>
     )

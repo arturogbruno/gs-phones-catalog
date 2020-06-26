@@ -1,0 +1,25 @@
+.Catalog {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+
+    header {
+        color: rgb(35, 35, 35);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+        text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.8);
+        
+        h1 {
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-style: italic;
+            font-weight: 600;
+        }
+    }
+}
