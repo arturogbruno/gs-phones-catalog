@@ -1,10 +1,11 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { BrowserRouter } from "react-router-dom";
+import { mount } from "enzyme";
 import Catalog from "./Catalog";
 
 describe("testing Catalog component", () => {
     const mockCategory = "phones";
-    const mockProducts = [
+    let mockProducts = [
         {
             "id": 2,
             "name": "Honor 10",
@@ -19,7 +20,17 @@ describe("testing Catalog component", () => {
         }
     ];
 
+    let wrapper = mount(
+        <BrowserRouter>
+            <Catalog category={mockCategory} products={mockProducts} />
+        </BrowserRouter>
+    );
+
     it("should render Catalog component", () => {
-        expect(shallow(<Catalog category={mockCategory} products={mockProducts} />)).toMatchSnapshot();
+        expect(wrapper).toMatchSnapshot();
+    });
+
+    it("should render ProductOverview elements if it receives a non-empty products array", () => {
+        expect(wrapper.find("ProductOverview").length).toBeGreaterThan(0);
     });
 });

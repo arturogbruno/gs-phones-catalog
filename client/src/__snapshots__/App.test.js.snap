@@ -1,35 +1,186 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`testing App should render App 1`] = `
-<ContextProvider
-  value={
+<Provider
+  store={
     Object {
-      "store": Object {
-        "dispatch": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
-        Symbol(observable): [Function],
-      },
-      "subscription": Subscription {
-        "handleChangeWrapper": [Function],
-        "listeners": Object {
-          "notify": [Function],
-        },
-        "onStateChange": [Function],
-        "parentSub": undefined,
-        "store": Object {
-          "dispatch": [Function],
-          "getState": [Function],
-          "replaceReducer": [Function],
-          "subscribe": [Function],
-          Symbol(observable): [Function],
-        },
-        "unsubscribe": null,
-      },
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
     }
   }
 >
-  <App />
-</ContextProvider>
+  <BrowserRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <App>
+        <div
+          className="App"
+        >
+          <Navbar
+            category="phones"
+          >
+            <div
+              className="Navbar"
+            >
+              <Link
+                to="/"
+              >
+                <LinkAnchor
+                  href="/"
+                  navigate={[Function]}
+                >
+                  <a
+                    href="/"
+                    onClick={[Function]}
+                  >
+                    <img
+                      alt="GS logo"
+                      className="logo"
+                      src="https://images.ctfassets.net/5gv1edeicqfs/48EM0LU3Z6gWkQCcCaeoq2/704ea273b5d50d09ff450a5ceaa74631/guidesmiths-logo.png"
+                    />
+                    <h2>
+                      Phones
+                       Catalog
+                    </h2>
+                  </a>
+                </LinkAnchor>
+              </Link>
+            </div>
+          </Navbar>
+          <Switch>
+            <Route
+              computedMatch={
+                Object {
+                  "isExact": true,
+                  "params": Object {},
+                  "path": "/",
+                  "url": "/",
+                }
+              }
+              exact={true}
+              location={
+                Object {
+                  "hash": "",
+                  "pathname": "/",
+                  "search": "",
+                  "state": undefined,
+                }
+              }
+              path="/"
+              render={[Function]}
+            >
+              <Catalog
+                category="phones"
+                products={
+                  Array [
+                    Object {
+                      "id": 2,
+                      "name": "iPhone 7",
+                    },
+                  ]
+                }
+              >
+                <div
+                  className="Catalog"
+                >
+                  <header>
+                    <h1>
+                      Welcome to the smallest phones catalog
+                    </h1>
+                    <h3>
+                      We have narrowed the search for you to make your choice easier!
+                    </h3>
+                  </header>
+                  <ProductOverview
+                    category="phones"
+                    key="2"
+                    product={
+                      Object {
+                        "id": 2,
+                        "name": "iPhone 7",
+                      }
+                    }
+                  >
+                    <div
+                      className="ProductOverview"
+                    >
+                      <Link
+                        to="/phones/2"
+                      >
+                        <LinkAnchor
+                          href="/phones/2"
+                          navigate={[Function]}
+                        >
+                          <a
+                            href="/phones/2"
+                            onClick={[Function]}
+                          >
+                            <img
+                              alt="undefined iPhone 7"
+                              src="images/undefined"
+                            />
+                            <div
+                              className="productMainInfo"
+                            >
+                              <div
+                                className="makerModel"
+                              >
+                                <h2 />
+                                <h2>
+                                  iPhone 7
+                                </h2>
+                              </div>
+                              <h2
+                                className="price"
+                              >
+                                 €
+                              </h2>
+                            </div>
+                          </a>
+                        </LinkAnchor>
+                      </Link>
+                    </div>
+                  </ProductOverview>
+                </div>
+              </Catalog>
+            </Route>
+          </Switch>
+          <Footer>
+            <div
+              className="Footer"
+            >
+              <p>
+                © 2020 Catalog - React Test | Arturo G. Bruno
+              </p>
+            </div>
+          </Footer>
+        </div>
+      </App>
+    </Router>
+  </BrowserRouter>
+</Provider>
 `;
