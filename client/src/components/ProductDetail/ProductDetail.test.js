@@ -5,17 +5,23 @@ import store from "../../redux/store";
 import ProductDetail from "./ProductDetail";
 
 describe("testing ProductDetail component", () => {
-    const match = {
-        params: {
-            id: "2"
-        }
-    }
-    
-    it("should render ProductDetail component", () => {
-        expect(shallow(
+    let wrapper;
+    beforeEach(() => {
+        const match = {
+            params: {
+                id: "2"
+            }
+        };
+
+        wrapper = shallow(
             <Provider store={store}>
                 <ProductDetail match={match} />
             </Provider>
-        )).toMatchSnapshot();
+            );
+    });
+
+
+    it("should render ProductDetail component", () => {
+        expect(wrapper).toMatchSnapshot();
     });
 });

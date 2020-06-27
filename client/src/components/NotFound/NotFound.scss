@@ -23,27 +23,22 @@
         text-align: center;
     }
 
-    button {
+    a {
+        text-decoration: none;
+        font-size: 1.5em;
+        color: rgb(35, 35, 35);
         margin-top: 30px;
         border: 3px solid rgb(3, 185, 153);
-        outline: none;
-        background-color: transparent;
         padding: 10px 20px;
         transition-duration: 0.4s;
-          
+
         &:hover {
             background-color: rgb(3, 185, 153);
+            color: #fff;
             cursor: pointer;
         }
-        
-        a {
-            text-decoration: none;
-            font-size: 1.5em;
-            color: rgb(35, 35, 35);
-
-        }
     }
-
+    
     @include lg {
         width: 50%;
     }

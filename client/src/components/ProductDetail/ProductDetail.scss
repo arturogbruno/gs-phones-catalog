@@ -75,24 +75,19 @@
             line-height: 1.3em;
         }
 
-        button {
-            border: 1px solid rgb(3, 185, 153);
-            outline: none;
-            background-color: transparent;
+        a {
+            text-decoration: none;
+            font-size: 1em;
+            color: rgb(35, 35, 35);
+            border: 1px solid rgb(3, 185, 153); 
             padding: 5px 10px;
             transition-duration: 0.4s;
-              
+
             &:hover {
                 background-color: rgb(3, 185, 153);
+                color: #fff;
                 cursor: pointer;
             }
-            
-            a {
-                text-decoration: none;
-                font-size: 1.2em;
-                color: rgb(35, 35, 35);
-    
-            }    
         }
     }
 

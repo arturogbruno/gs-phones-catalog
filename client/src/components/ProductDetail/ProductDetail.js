@@ -18,10 +18,11 @@ const ProductDetail = ({ match }) => {
         )
     }
     
-    const selectedProduct = products.find(product => product.id === id);
+    const searchProduct = products => products.find(product => product.id === id);
+    const foundProduct = searchProduct(products);
 
-    if(selectedProduct) {
-        const { manufacturer, name, price, imageFileName, description, processor, ram, screen, color } = selectedProduct;
+    if(foundProduct) {
+        const { manufacturer, name, price, imageFileName, description, processor, ram, screen, color } = foundProduct;
 
         return (
             <div className="ProductDetail">
@@ -48,7 +49,7 @@ const ProductDetail = ({ match }) => {
                 <section className="productDescription">
                     <h4>Description:</h4>
                     <p>{description}</p>
-                    <button><Link to="/">Back</Link></button>
+                    <Link to="/">Back</Link>
                 </section>
             </div>
         )

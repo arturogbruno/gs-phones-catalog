@@ -11,12 +11,10 @@ exports[`testing NotFound component should render NotFound component 1`] = `
   <h1>
     Ups... we can't find the page you were looking for.
   </h1>
-  <button>
-    <Link
-      to="/"
-    >
-      Take me back!
-    </Link>
-  </button>
+  <Link
+    to="/"
+  >
+    Take me back!
+  </Link>
 </div>
 `;
